@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Proyecto Final - Enrique Pyszczek</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pagina Personal Redes Datos Academicos Experiencia Laboral y Proyectos Realizados" />
+  <meta name="author" content="Enrique Pyszczek" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+<div class="row">
+
+    <div class="container">
+            <div class="logo">
+                <a href="https://www.argentina.gob.ar/latiendo/queres-capacitarte-y-estudiar/argentina-programa/" target="_blank">
+                    <img src="./assets/APLogo.png" id="logoAP">
+            </div>
+
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/enrique-jose-pyszczek-0614a0213/" target="_blank"> <img src="./assets/linkedin.png" height= "50px" width= "50px" alt="Linkedin"></a>
+                <a href="https://twitter.com/EPyszczek" target="_blank"> <img src="./assets/twitter.png" height= "50px" width= "50px" alt="Twitter"></a>
+                <a href="https://www.instagram.com/polaris.informatica/" target="_blank"> <img src="./assets/instagram.png" height= "50px" width= "50px" alt="Instagram"></a>
+                <a href="https://github.com/ejpyszczek" target="_blank"> <img src="./assets/github.png" height= "50px" width= "50px" alt="Github"></a>
+                <a href="https://www.facebook.com/enriquejose.pyszczek" target="_blank"> <img src="./assets/facebook.png" height= "50px" width= "50px" alt="Facebook"></a>
+                <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">INGRESO</button>
+                <!--<button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</button>-->
+            </div>
+    </div>
+
+            <div>
+                <img src="./assets/banner.jpg" height= "550px" width= "1470px"  alt="">
+            </div>
+
+    
+            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                <img src="./assets/ejp2.png"  height= "150px" width= "300px" class="img-fluid" id="fotodeperfil">
+            </div>
+
+            <div class="nombre">
+                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                    <p id="nombre">{//Enrique J. Pyszczek\\}</p>
+                        <p>Full Stack Developer Jr</p>
+                </div>
+            </div>
+
+        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+            <span>
+                    <h1>Acerca de Mi</h1>
+                    <p>Un apasionado por la informatica, la tecnologia y la programacion, con más de 20 años de experiencia en gestion comercial y soporte tecnico.</p>
+            </span>
+        </div> 
+
+        <h1>Experiencia Laboral</h1>
+
+        <div class="contenedor">
+            <div class="col-sm-12 col-md-7 col-lg-7 parte1">
+                <h3>Ilda G. Moris</h3>
+                    <p>(1992 - 2000) Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ullam, illo exercitationem Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ullam, illo aliquam saepe est debitis, mollitia perferendis maiores laborum ercitationem doloribus aliquam saepe est laborum facer.</p>
+
+                    <h3>Millenium SRL</h3>
+                    <p>(2000 - 2002) Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ullam, illo exercitationem Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ullam, illo aliquam saepe est debitis, mollitia perferendis maiores laborum ercitationem doloribus aliquam saepe est laborum facer.</p>
+        </div>
+
+         <h1>Educacion</h1>
+
+        <div class="contenedor">
+            <div class="col-sm-12 col-md-7 col-lg-7 parte1">
+                <h3>Universidad Tecnologica Nacional</h3>
+                    <p>Titulo o Certificado. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ullam, illo Reiciendis ullam, illo aliquam saepe est debitis, mollitia perferendis maiores laborum ercitationem aliquam saepe est debitis, mollitia perferendis maiores laborum ercitationem</p>
+
+                    <h3>Instituto Americano de Ensenanza Superior</h3>
+                    <p>Titulo o Certificado. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ullam, illo Reiciendis ullam, illo aliquam saepe est debitis, mollitia perferendis maiores laborum ercitationem aliquam saepe est debitis, mollitia perferendis maiores laborum ercitationem</p>
+        </div>
+
+        <div class="circulos">
+                <h1>Hard & Soft Skills</h1>
+            <div>
+                <img src="./assets/skins.jpg" height= "250px" width= "1350px" alt="">
+            </div>
+
+        <div class="text-center col-sm-4 col-md-4 col-lg-4">
+        <circle-progress
+        [percent]="89"
+        [radius]="85"
+        [imageSrc]="'./assets/html.png'"
+        [showImage]="true"
+        [imageHeight]="70"
+        [imageWidth]="70"
+        [showUnits]="false"
+        [showSubtitle]="false"
+        [outerStrokeWidth]="10"
+        [innerStrokeWidth]="8"
+        [outerStrokeColor]="'blue'"
+        [innerStrokeColor]="'#C7E596'"
+        [animation]="true"
+        [animationDuration]="600"
+        ></circle-progress>
+      </div>
+      <div class="text-center col-sm-4 col-md-4 col-lg-4">
+        <circle-progress
+        [percent]="80"
+        [radius]="85"
+        [imageSrc]="'./assets/CSS.png'"
+        [showImage]="true"
+        [imageHeight]="70"
+        [imageWidth]="70"
+        [showUnits]="false"
+        [showSubtitle]="false"
+        [outerStrokeWidth]="10"
+        [innerStrokeWidth]="8"
+        [outerStrokeColor]="'blue'"
+        [innerStrokeColor]="'#C7E596'"
+        [animation]="true"
+        [animationDuration]="600"
+        ></circle-progress>
+      </div>
+      <div class="text-center col-sm-4 col-md-4 col-lg-4">
+        <circle-progress
+        [percent]="70"
+        [radius]="85"
+        [imageSrc]="'./assets/js.png'"
+        [showImage]="true"
+        [imageHeight]="70"
+        [imageWidth]="70"
+        [showUnits]="false"
+        [showSubtitle]="false"
+        [outerStrokeWidth]="10"
+        [innerStrokeWidth]="8"
+        [outerStrokeColor]="'blue'"
+        [innerStrokeColor]="'#C7E596'"
+        [animation]="true"
+        [animationDuration]="600"
+        ></circle-progress>
+      </div>
+      <div class="text-center col-sm-4 col-md-4 col-lg-4">
+        <circle-progress
+        [percent]="80"
+        [radius]="85"
+        [imageSrc]="'./assets/git.png'"
+        [showImage]="true"
+        [imageHeight]="70"
+        [imageWidth]="70"
+        [showUnits]="false"
+        [showSubtitle]="false"
+        [outerStrokeWidth]="10"
+        [innerStrokeWidth]="8"
+        [outerStrokeColor]="'blue'"
+        [innerStrokeColor]="'#C7E596'"
+        [animation]="true"
+        [animationDuration]="600"
+        ></circle-progress>
+      </div>
+      <div class="text-center col-sm-4 col-md-4 col-lg-4">
+        <circle-progress
+        [percent]="90"
+        [radius]="85"
+        [imageSrc]="'./assets/grupal.png'"
+        [showImage]="true"
+        [imageHeight]="70"
+        [imageWidth]="70"
+        [showUnits]="false"
+        [showSubtitle]="false"
+        [outerStrokeWidth]="10"
+        [innerStrokeWidth]="8"
+        [outerStrokeColor]="'blue'"
+        [innerStrokeColor]="'#C7E596'"
+        [animation]="true"
+        [animationDuration]="600"
+        ></circle-progress>
+      </div>
+      <div class="text-center col-sm-4 col-md-4 col-lg-4">
+        <circle-progress
+        [percent]="65"
+        [radius]="85"
+        [imageSrc]="'./assets/eng.png'"
+        [showImage]="true"
+        [imageHeight]="70"
+        [imageWidth]="70"
+        [showUnits]="false"
+        [showSubtitle]="false"
+        [outerStrokeWidth]="10"
+        [innerStrokeWidth]="8"
+        [outerStrokeColor]="'blue'"
+        [innerStrokeColor]="'#C7E596'"
+        [animation]="true"
+        [animationDuration]="600"
+        ></circle-progress>
+      </div>
+  </div>
+            <h1>Proyectos Realizados</h1>
+
+    <div class="contenedor">
+            <div class="col-sm-12 col-md-7 col-lg-7 parte1">
+                <h3>Web Empresarial</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ullam, illo exercitationem doloribus Reiciendis ullam, illo aliquam saepe est debitis, mollitia perferendis maiores laborum ercitationem aliquam saepe est laborum facere perspiciatis laboriosam.</p>
+            </div>
+
+            <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 parte2">
+                <a href="https://www.polarisinformatica.com.ar" target="_blank"> <img src="./assets/WebPolaris.png" height= "150px" width= "300px" class="img-fluid img-proyecto" alt="Polaris Informatica"></a>
+            </div>
+
+        <div class="col-sm-12 col-md-7 col-lg-7 parte1">
+                <h3>Web Eco Turismo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ullam, illo exercitationem doloribus aliquam saepe est debitis, mollitia perferendis maiores laborum facere perspiciatis laboriosam Reiciendis ullam, illo aliquam saepe est debitis, mollitia perferendis maiores laborum ercitationem repudiandae magnam.</p>
+        </div>
+
+            <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 parte2">
+                <a href="https://www.ushuaianatural.com.ar" target="_blank"> <img src="./assets/Ushu_Natu.png" height= "150px" width= "300px" class="img-fluid img-proyecto" alt="Ushuaia Natural"></a>
+            </div>
+
+    </div>
+
+    <footer>
+        <p align="center">Enrique J. Pyszczek | © Argentina Programa 2022</p>
+        <p align="center">Buenos Aires - Argentina</p>
+    </footer>
+
+</div>
+
+</body>
+
+</html>
+
+
+
+
+
